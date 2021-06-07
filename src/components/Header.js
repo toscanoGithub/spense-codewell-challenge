@@ -72,11 +72,12 @@ const useStyles = makeStyles((theme) => ({
   },
 
   toggledMenu: {
+    backgroundColor: "#F0EEEB",
     [theme.breakpoints.up("sm")]: {
       display: "none",
     },
     position: "absolute",
-    height: "100vh",
+    // height: "100vh",
     width: "100%",
     top: 50,
     left: 0,
@@ -85,14 +86,25 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "flex-start",
     justifyContent: "flex-start",
     "&>a": {
+      color: "black",
+
       width: "100%",
       textDecoration: "none",
       padding: 10,
       marginBottom: 3,
-      backgroundColor: "rgba(0,23,160, 0.04)",
+      backgroundColor: "white",
       "&:hover": {
         opacity: 0.8,
       },
+    },
+  },
+  navBtn: {
+    backgroundColor: "#5571D4",
+    color: "white",
+
+    "&:hover": {
+      backgroundColor: "#5571D4",
+      opacity: 0.8,
     },
   },
 }));
@@ -157,7 +169,7 @@ function Header() {
           <Typography className={classes.headerLink} component={Link} to="#">
             Login
           </Typography>
-          <Button fullWidth color="primary" variant="outlined">
+          <Button className={classes.navBtn} fullWidth variant="outlined">
             Get Started
           </Button>
         </div>
