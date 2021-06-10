@@ -5,12 +5,11 @@ import {
   TextField,
   Typography,
 } from "@material-ui/core";
-// import heroImage from "../images/Hero_Image.png";
-// import checkmark from "../images/Checkmark.svg";
+import EarningsBox from "./EarningsBox";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: 40,
+    // marginTop: 40,
     paddingBottom: 40,
 
     display: "flex",
@@ -37,8 +36,8 @@ const useStyles = makeStyles((theme) => ({
   heroText: {
     "&>h1": {
       fontSize: "1.5rem",
-          fontWeight: 700,
-      marginTop:"0.5rem",
+      fontWeight: 700,
+      marginTop: "0.5rem",
       marginBottom: "0.5rem",
     },
   },
@@ -46,12 +45,12 @@ const useStyles = makeStyles((theme) => ({
   checkmarkImage: {
     height: 20,
     objectFit: "contain",
+    marginRight: 10,
   },
   heroListItem: {
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
-    columnGap: 10,
     margin: "0.5rem auto",
   },
 
@@ -127,12 +126,12 @@ function HeroContent() {
         </div>
       </div>
       <div
-        style={{
+        style={{position:"relative",
           background: `url(../images/Hero_Image.png) center center / cover  no-repeat`,
         }}
         className={classes.heroImage}
       >
-        {/* <img className={classes.heroImage} src={heroImage} alt="her image" /> */}
+        <EarningsBox />
       </div>
     </div>
   );

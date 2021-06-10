@@ -79,15 +79,16 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     // height: "100vh",
     width: "100%",
-    top: 50,
-    left: 0,
+    top: 30,
+    // right: "50%",
     display: "flex",
+    // transform:"translateX(50%)",
     flexDirection: "column",
-    alignItems: "flex-start",
-    justifyContent: "flex-start",
+    alignItems: "center",
+    justifyContent: "center",
     "&>a": {
       color: "black",
-
+textAlign:"center",
       width: "100%",
       textDecoration: "none",
       padding: 10,
@@ -118,7 +119,7 @@ function Header() {
     <div className={classes.root}>
       <div className={classes.brand}>
         <Typography component={Link} to="/">
-          Spence.
+          Spense.
         </Typography>
       </div>
       <div className={classes.menu}>

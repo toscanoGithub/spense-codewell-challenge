@@ -1,4 +1,8 @@
 import { makeStyles } from "@material-ui/core";
+import Slide from "react-reveal/Slide";
+
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: 30,
@@ -14,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         },
       
       [theme.breakpoints.down("xs")]: {
-        width: 40,
+        width: 30,
       },
     },
   },
@@ -31,8 +35,14 @@ function Socials() {
       "/images/Slack Logo.png",
     ];
   const classes = useStyles();
-    return <div className={classes.root}>
-      {images.map(image => (<img src={image} />))}
-  </div>;
+    return (
+      <div className={classes.root}>
+        {images.map((image) => (
+          <Slide left>
+            <img src={image} />
+          </Slide>
+        ))}
+      </div>
+    );
 }
 export default Socials;

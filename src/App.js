@@ -7,6 +7,7 @@ import HeroContent from "./components/HeroContent";
 import Socials from "./components/Socials";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import { Header1 } from "./components/Header1";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -14,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   hero: {
     // height: "calc(100vh - 40px)",
     backgroundColor: "#F0EEEB",
-    paddingTop: 20,
+    // paddingTop: 20,
   },
   container: {
     // backgroundColor: "#F0EEEB",
@@ -41,12 +42,12 @@ function App() {
         <Banner />
         <div className={classes.hero}>
           <div className={classes.container}>
-            <Header />
+            <Header1 />
             <HeroContent />
-            
           </div>
         </div>
-        <Socials />
+          <Socials />
+
         <Main />
         <Footer />
         <Route path="/promo" component={Promo} />
