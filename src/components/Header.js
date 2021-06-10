@@ -138,7 +138,7 @@ function Header() {
           <Typography className={classes.headerLink} component={Link} to="#">
             Login
           </Typography>
-          <Button className={classes.getStartedBtn} variant="contained">
+          <Button className={classes.getStartedBtn}  variant="contained">
             Get Started
           </Button>
         </div>

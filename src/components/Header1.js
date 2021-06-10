@@ -157,9 +157,13 @@ export const Header1 = () => {
           </div>
 
           <div className={classes.controls}>
-            <Button variant="outlined">Login</Button>
+            <Button color="primary" variant="contained">
+              Login
+            </Button>
 
-            <Button disableElevation variant="contained">Get Started</Button>
+            <Button color="primary" disableElevation variant="outlined">
+              Get Started
+            </Button>
           </div>
         </div>
         <div className={classes.rightSection}>
