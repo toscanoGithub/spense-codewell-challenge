@@ -122,7 +122,7 @@ function HeroContent() {
 
         <div className={classes.heroInput}>
           <input className={classes.textInput} placeholder="john@example.com" />
-          <Button className={classes.getStartedBtn}>get Started</Button>
+          <Button variant="contained" color="primary" >get Started</Button>
         </div>
       </div>
       <div
